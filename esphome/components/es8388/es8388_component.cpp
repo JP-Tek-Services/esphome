@@ -176,12 +176,12 @@ void ES8388Component::setup() {
   this->write_byte(ES8388_ADCCONTROL9, 0x20); /*  */
 
   /* set LOUT1 / ROUT1 volume: 0dB (unattenuated) */
-  this->write_byte(ES8388_DACCONTROL24, 0x1C); /*  */
-  this->write_byte(ES8388_DACCONTROL25, 0x1C); /*  */
+  this->write_byte(ES8388_DACCONTROL24, 0x21); /*  */
+  this->write_byte(ES8388_DACCONTROL25, 0x21); /*  */
 
   /* set LOUT2 / ROUT2 volume: 0dB (unattenuated) */
-  this->write_byte(ES8388_DACCONTROL26, 0x1C); /*  */
-  this->write_byte(ES8388_DACCONTROL27, 0x1C); /*  */
+  this->write_byte(ES8388_DACCONTROL26, 0x21); /*  */
+  this->write_byte(ES8388_DACCONTROL27, 0x21); /*  */
 
   /* power up and enable DAC; power up ADC (no MIC bias) */
   this->write_byte(ES8388_DACPOWER, 0x3c); /*  */
