@@ -18,7 +18,8 @@ void ES8388Component::setup() {
   // worker mode
   this->write_byte(0x08, 0x00);
   // DAC powerdown
-  this->write_byte(0x04, 0xC0);
+  // this->write_byte(0x04, 0xC0);
+  this->write_byte(0x04, 0x3e);
   // vmidsel/500k ADC/DAC idem
   this->write_byte(0x00, 0x12);
 
